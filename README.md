@@ -2,6 +2,8 @@
 
 A classic Battleship game implemented in JavaScript using **Test-Driven Development (TDD)** methodology and tested with **Jest**.
 
+## Status: 🚧 Under Construction
+
 ## 📦 Features
 - Ship placement, attack tracking, and win condition logic
 - Isolated logic with full test coverage using Jest
