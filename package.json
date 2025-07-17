@@ -1,0 +1,25 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "A classic Battleship game implemented in JavaScript using **Test-Driven Development (TDD)** methodology and tested with **Jest**.",
+  "main": "index.js",
+  "type": "module",
+"scripts": {
+  "test": "jest"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singharyan006/battleship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/singharyan006/battleship/issues"
+  },
+  "homepage": "https://github.com/singharyan006/battleship#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.0",
+    "jest": "^30.0.4"
+  }
+}
