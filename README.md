@@ -1,4 +1,23 @@
-# 🚢 Battleship Game
+# 🚢 Battle### Core Game Logic
+- ⚓ **Ship Module**: Ship creation, hit detection, and sink status
+- 🎯 **Gameboard**: 10x10 grid with ## 🐛 Known Issues
+
+- Terminal interface may need refinement for better UX
+- Ship placement validation could be enhanced
+
+## 🚀 Future Enhancements
+
+- [ ] Enhanced AI strategy (hunt/target mode after hits)
+- [ ] Web-based GUI interface
+- [ ] Multiplayer support
+- [ ] Advanced ship placement validation
+- [ ] Game statistics tracking
+- [ ] Save/load game functionality
+- [ ] AI difficulty levels and attack tracking
+- 👤 **Player System**: Human and computer players with move validation
+- 🤖 **AI Player**: Intelligent computer opponent with move tracking
+- 🎮 **Game Controller**: Turn-based gameplay logic
+- 💻 **Terminal Interface**: Command-line game runnerame
 
 A classic Battleship game implemented in JavaScript using **Test-Driven Development (TDD)** methodology. Features a complete game engine with ship placement, attack tracking, player management, and terminal-based gameplay.
 
@@ -53,6 +72,7 @@ battleship/
 │   ├── ship.js          # Ship creation and management
 │   ├── gameboard.js     # Game board logic and ship placement
 │   ├── player.js        # Player factory (human/computer)
+│   ├── ai.js           # AI player logic and move generation
 │   ├── game.js          # Game controller and turn management
 │   └── index.js         # Terminal game interface
 ├── tests/
@@ -120,9 +140,11 @@ npm run test:coverage
 - ✅ Implemented core Ship module
 - ✅ Built Gameboard with attack tracking
 - ✅ Created Player system (human + AI)
+- ✅ Added dedicated AI module with smart move tracking
 - ✅ Added Game controller logic
 - ✅ Built terminal interface
 - ✅ Fixed coordinate parameter bug
+- ✅ Enhanced computer player with move validation
 - ✅ Achieved 100% test coverage
 
 ## � Known Issues
