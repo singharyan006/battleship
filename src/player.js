@@ -1,11 +1,8 @@
+import AIPlayer from './ai.js';
+
 export default function createPlayer(isComputer = false) {
   const movesMade = new Set();
-
-  function getRandomCoord() {
-    const x = Math.floor(Math.random() * 10);
-    const y = Math.floor(Math.random() * 10);
-    return [x, y];
-  }
+  const computerAI = isComputer ? AIPlayer() : null;
 
   function hasAlreadyAttacked(coord) {
     return movesMade.has(coord.toString());
@@ -15,9 +12,8 @@ export default function createPlayer(isComputer = false) {
     let target;
 
     if (isComputer) {
-      // Generate new random coord until it's unique
       do {
-        target = getRandomCoord();
+        target = computerAI.getMove();
       } while (hasAlreadyAttacked(target));
     } else {
       if (!coord) throw new Error("Player must provide a coordinate");
@@ -30,5 +26,10 @@ export default function createPlayer(isComputer = false) {
     return target;
   }
 
-  return { isComputer, makeMove, hasAlreadyAttacked };
+  function resetMoves() {
+    movesMade.clear();
+    if (computerAI) computerAI.reset();
+  }
+
+  return { isComputer, makeMove, hasAlreadyAttacked, resetMoves };
 }
