@@ -1,23 +1,4 @@
-# 🚢 Battle### Core Game Logic
-- ⚓ **Ship Module**: Ship creation, hit detection, and sink status
-- 🎯 **Gameboard**: 10x10 grid with ## 🐛 Known Issues
-
-- Terminal interface may need refinement for better UX
-- Ship placement validation could be enhanced
-
-## 🚀 Future Enhancements
-
-- [ ] Enhanced AI strategy (hunt/target mode after hits)
-- [ ] Web-based GUI interface
-- [ ] Multiplayer support
-- [ ] Advanced ship placement validation
-- [ ] Game statistics tracking
-- [ ] Save/load game functionality
-- [ ] AI difficulty levels and attack tracking
-- 👤 **Player System**: Human and computer players with move validation
-- 🤖 **AI Player**: Intelligent computer opponent with move tracking
-- 🎮 **Game Controller**: Turn-based gameplay logic
-- 💻 **Terminal Interface**: Command-line game runnerame
+# 🚢 Battleship Game
 
 A classic Battleship game implemented in JavaScript using **Test-Driven Development (TDD)** methodology. Features a complete game engine with ship placement, attack tracking, player management, and terminal-based gameplay.
 
@@ -31,7 +12,8 @@ A classic Battleship game implemented in JavaScript using **Test-Driven Developm
 ### Core Game Logic
 - ⚓ **Ship Module**: Ship creation, hit detection, and sink status
 - 🎯 **Gameboard**: 10x10 grid with ship placement and attack tracking
-- � **Player System**: Human and computer players with move validation
+- 👤 **Player System**: Human and computer players with move validation
+- 🤖 **AI Player**: Intelligent computer opponent with move tracking
 - 🎮 **Game Controller**: Turn-based gameplay logic
 - 💻 **Terminal Interface**: Command-line game runner
 
@@ -147,20 +129,20 @@ npm run test:coverage
 - ✅ Enhanced computer player with move validation
 - ✅ Achieved 100% test coverage
 
-## � Known Issues
+## 🐛 Known Issues
 
 - Terminal interface may need refinement for better UX
 - Ship placement validation could be enhanced
-- Computer AI uses basic random strategy
 
 ## 🚀 Future Enhancements
 
-- [ ] Enhanced AI strategy (hunt/target mode)
+- [ ] Enhanced AI strategy (hunt/target mode after hits)
 - [ ] Web-based GUI interface
 - [ ] Multiplayer support
-- [ ] Ship placement validation
+- [ ] Advanced ship placement validation
 - [ ] Game statistics tracking
 - [ ] Save/load game functionality
+- [ ] AI difficulty levels
 
 ## 🤝 Contributing
 
