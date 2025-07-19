@@ -26,7 +26,7 @@ export default function createPlayer(isComputer = false) {
     }
 
     movesMade.add(target.toString());
-    opponentGameboard.receiveAttack(target);
+    opponentGameboard.receiveAttack(target[0], target[1]);
     return target;
   }
 
